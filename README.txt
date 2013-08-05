@@ -4,3 +4,4 @@ OBS:
 
 5Augusti 2013:
 - If testing the web then you must deploy the EAR-file.
+- run by -> http://localhost:8080/MediaserverApp-web/Local
