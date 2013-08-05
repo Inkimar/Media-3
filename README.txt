@@ -2,11 +2,15 @@ OBS:
 - Remember to edit the file se.nrm.mediaserver.util.BeanService in the web-module.
 - you need to edit the ip-number.
 
+WEB:
 5Augusti 2013:
 - If testing the web then you must deploy the EAR-file.
 - run by -> http://localhost:8080/MediaserverApp-web/Local
 - - have not succeeded in adding a record to the database !?
+(1) Able to fetch information , does-not-fly if I put in the 
+- - - localBean.saveLocal(media); - > then everything breaks !?
 
+J2SE:CLIENT
 5Augusti 2013:
 - J2SE-client works - using remote-interface ( remember to check the IP-nummer ).
 
