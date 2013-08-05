@@ -12,7 +12,7 @@ import se.nrm.mediaserver.service.MediaService;
  * @author ingimar
  */
 @Stateless
-public class MediaServiceBean implements MediaService {
+public class MediaServiceBean implements Serializable, MediaService {
 
     @PersistenceContext(unitName = "MysqlStatesPU")
     private EntityManager em;

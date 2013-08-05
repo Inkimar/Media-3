@@ -1,4 +1,4 @@
-package se.nrm.mediaserver.domain;
+package se.nrm.mediaserver.media3.domain;
 
 
 

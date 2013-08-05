@@ -14,7 +14,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import se.nrm.mediaserver.domain.*;
+import se.nrm.mediaserver.media3.domain.Image;
+import se.nrm.mediaserver.media3.domain.Media;
+
 import se.nrm.mediaserver.service.MediaService;
 import se.nrm.mediaserver.util.BeanService;
 

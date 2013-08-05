@@ -1,7 +1,8 @@
-package se.nrm.mediaserver.domain;
+package se.nrm.mediaserver.media3.domain;
 
 import java.io.Serializable;
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -10,9 +11,10 @@ import javax.persistence.Id;
  *
  * @author ingimar
  */
-public class Project implements Serializable {
+@Entity
+public class MetaData implements Serializable {
 
-    private static final long serialVersionUID = 11L;
+    private static final long serialVersionUID = 9L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,6 +28,4 @@ public class Project implements Serializable {
     public void setUuid(Long uuid) {
         this.uuid = uuid;
     }
-    
-    
 }

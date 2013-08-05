@@ -12,8 +12,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import se.nrm.mediaserver.domain.Image;
-import se.nrm.mediaserver.domain.Media;
+
+import se.nrm.mediaserver.media3.domain.Image;
+import se.nrm.mediaserver.media3.domain.Media;
+
 import se.nrm.mediaserver.service.MediaLocalService;
 
 /**
@@ -25,6 +27,8 @@ public class Local extends HttpServlet {
     
     @EJB
     MediaLocalService localBean;
+    
+    
 
     /**
      * Processes requests for both HTTP
