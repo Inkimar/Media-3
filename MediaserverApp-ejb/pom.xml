@@ -20,11 +20,11 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>se.nrm.mediaserver.service</groupId>
-            <artifactId>Service</artifactId>
+       <dependency>
+            <groupId>se.mediaserver.tutorial.mediaweb</groupId>
+            <artifactId>Domain</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>javax</groupId>

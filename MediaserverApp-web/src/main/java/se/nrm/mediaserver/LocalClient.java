@@ -24,7 +24,7 @@ import se.nrm.mediaserver.service.MediaLocalService;
  */
 @WebServlet(name = "LocalClient", urlPatterns = {"/LocalClient"})
 public class LocalClient extends HttpServlet {
-    
+
     @EJB
     MediaLocalService localBean;
 
@@ -50,19 +50,18 @@ public class LocalClient extends HttpServlet {
             out.println("<title>Servlet Testing</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Testing at " + request.getContextPath() + "</h1>");
-            
-            // MediaLocalService localBean = BeanLocalService.outreach();
+            out.println("<h1>LOCAL Testing at " + request.getContextPath() + "</h1>");
 
             out.println("<h1>Testing at " + localBean + "</h1>"); // här kan jag se att det är en böna.
 
             out.println("<h1> Testing at " + localBean.testLocal() + "</h1>");
+            
             Media media = this.getMedia();
             out.println("<h1>Serverdate is  " + localBean.getLocalServerDate() + "</h1>");
             out.println("<h1> Testing skriver ut. " + media + "</h1>");
-            out.println("<h1> 2013-08-09 klockan 12:09 NOT Saving </h1>");
-//            out.println("<h1> 2013-08-09 klockan 10:00 NOT Saving </h1>");
-//            bean.save(media);
+            out.println("<h1> 2013-08-09 klockan 14:26 NOT Saving </h1>");
+            localBean.saveLocal(media);
+            out.println("<h1> 2013-08-09 klockan 14:26 SAVED ? </h1>");
             out.println("</body>");
             out.println("</html>");
         } finally {
