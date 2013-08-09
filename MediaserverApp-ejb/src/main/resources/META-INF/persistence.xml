@@ -6,23 +6,18 @@
     <persistence-unit name="MysqlStatesPU" transaction-type="JTA">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <jta-data-source>jdbc/__nrmStates</jta-data-source>
-<!--         <class>se.nrm.mediaserver.domain.Image</class>
-         <class>se.nrm.mediaserver.domain.Media</class>
-         <class>se.nrm.mediaserver.domain.MediaText</class>
-         <class>se.nrm.mediaserver.domain.MetaData</class>-->
-<!--        <exclude-unlisted-classes>
-            false
-        </exclude-unlisted-classes>
+        <!--         <class>se.nrm.mediaserver.domain.Image</class>
+        <class>se.nrm.mediaserver.domain.Media</class>
+        <class>se.nrm.mediaserver.domain.MediaText</class>
+        <class>se.nrm.mediaserver.domain.MetaData</class>-->
+
+    </persistence-unit>
+    
+    <persistence-unit name="PostgreStatesPU" transaction-type="JTA">
+        <jta-data-source>jdbc/__nrmPostgresPool</jta-data-source>
+<!--        <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
             <property name="eclipselink.ddl-generation" value="drop-and-create-tables" />
         </properties>-->
-        </persistence-unit>
-<!--    
-       <persistence-unit name="PostgreStatesPU" transaction-type="JTA">
-        <jta-data-source>jdbc/__nrmPostgresPool</jta-data-source>
-        <exclude-unlisted-classes>false</exclude-unlisted-classes>
-        <properties>
-            <property name="eclipselink.ddl-generation" value="drop-and-create-tables" />
-        </properties>
-    </persistence-unit>-->
+    </persistence-unit>
 </persistence>

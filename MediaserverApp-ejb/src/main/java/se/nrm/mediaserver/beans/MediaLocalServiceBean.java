@@ -38,6 +38,4 @@ public class MediaLocalServiceBean implements MediaLocalService {
         Date date = new Date();
         return "EJB-LOCAL says Hello. Servertime is " + date.toString();
     }
-    // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method")
 }

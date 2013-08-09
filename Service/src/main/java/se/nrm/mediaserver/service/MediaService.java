@@ -4,14 +4,13 @@
  */
 package se.nrm.mediaserver.service;
 
-import javax.ejb.Local;
 import javax.ejb.Remote;
 
 /**
  *
  * @author ingimar
  */
-@Remote // @Local
+@Remote 
 public interface MediaService {
 
     void save(Object media);

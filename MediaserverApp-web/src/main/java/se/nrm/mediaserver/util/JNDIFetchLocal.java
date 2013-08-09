@@ -13,7 +13,7 @@ import se.nrm.mediaserver.service.MediaLocalService;
  *
  * @author ingimar
  */
-public class BeanLocalService {
+public class JNDIFetchLocal {
 
     public static MediaLocalService outreach() {
         MediaLocalService bean = null;
@@ -23,7 +23,7 @@ public class BeanLocalService {
             jndiProps.put("java.naming.factory.url.pkgs", "com.sun.enterprise.naming");
             jndiProps.put("java.naming.factory.state", "com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl");
 
-            jndiProps.setProperty("org.omg.CORBA.ORBInitialHost", "172.16.34.34"); // 192.168.10.163, 172.16.34.31, 172.16.34.34
+            jndiProps.setProperty("org.omg.CORBA.ORBInitialHost", "172.16.34.34");
             Context ctx = new InitialContext(jndiProps); //
             /*
              * EJB5181:Portable JNDI names for EJB MediaLocalServiceBean: 
